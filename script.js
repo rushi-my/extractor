@@ -17,7 +17,9 @@ function processText() {
         }
     }
 
-    output.innerHTML = result.length > 0 
+    document.getElementById('counter').textContent = result.length;
+
+    output.innerHTML = result.length > 0
         ? `<ul>${result.map(articul => `<li>${articul}</li>`).join('')}</ul>` 
         : '<em style="color: #666;">Артикулів не знайдено</em>';
 }

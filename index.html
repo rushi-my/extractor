@@ -2,8 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">    <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>Extractor</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +16,11 @@
                 placeholder="Вставте cкопійований список товарів з On display тут ....."
             ></textarea>
         </div>
-
+        <div class="result-header">
+            <div class="counter">
+                Знайдено артикулів: <span id="counter">0</span>
+            </div>
+        </div>
         <div class="result-box">
             <div id="output"></div>
         </div>
