@@ -4,16 +4,19 @@ const notification = document.getElementById('notification');
 
 function processText() {
     const text = inputText.value;
-    const pattern = /(\d+)\s\((\d+)\)/g;
+    const pattern = /(\d+)\s\((\d+)\).*?ВИСТАВЛЕНО:\s(\d+)/g;
     const result = [];
     let match;
 
     while ((match = pattern.exec(text)) !== null) {
         const articul = match[1];
         const value = match[2];
+        const quantity = parseInt(match[3], 10);
 
         if (!['21', '81'].includes(value)) {
-            result.push(articul);
+            for (let i = 0; i < quantity; i++) {
+                result.push(articul);
+            }
         }
     }
 
