@@ -94,7 +94,7 @@ button:active {
 .notification {
     position: fixed;
     top: 20px;
-    right: -212px;
+    right: -220px;
     background: #4CAF50;
     color: white;
     padding: 15px 25px;
